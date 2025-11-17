@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rated 5/5 by 2k+ patients, Shri Sai Dental Clinic offers painless dental treatments, implants, braces & aligners in Hadapsar, Pune since 2008.">
+    <meta name="keywords"
+        content="Best Dental Clinic in Hadapsar, Painless Root Canal Pune, Dental Implants Hadapsar, Braces & Aligners Pune, Dr. Nitin Sapat Dentist, Cosmetic Dentistry Pune">
+    <meta name="author" content="Shri Sai Dental Clinic">
+    <!-- Page Title -->
+    <title>Best Dental Clinic in Hadapsar Pune | Shri Sai Dental Clinic – Dr. Nitin Sapat</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://html.awaikenthemes.com/primecare/demo-2/css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/all.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="https://html.awaikenthemes.com/primecare/demo-2/css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="https://html.awaikenthemes.com/primecare/demo-2/css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Floating Buttons & Chatbot Styles -->
+    <style>
+        /* Floating Buttons Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        /* Floating Button Base Styles */
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Chatbot Button */
+        .chatbot-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .chatbot-btn:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .chatbot-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff4444;
+            color: #fff;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            border: 2px solid #fff;
+        }
+
+        /* Instagram Button */
+        .instagram-btn {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .instagram-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Facebook Button */
+        .facebook-btn {
+            background: #1877f2;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .facebook-btn:hover {
+            background: #166fe5;
+        }
+
+        /* When chatbot is active, move social buttons back */
+        .floating-buttons.chatbot-active .instagram-btn,
+        .floating-buttons.chatbot-active .facebook-btn {
+            transform: translateY(540px) scale(0.8);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        /* Chatbot Widget */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 380px;
+            max-width: calc(100vw - 60px);
+            height: 500px;
+            max-height: calc(100vh - 140px);
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 9998;
+            overflow: hidden;
+        }
+
+        .chatbot-widget.active {
+            display: flex;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Chatbot Header */
+        .chatbot-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header-content h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .chatbot-header-content p {
+            margin: 5px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .chatbot-close {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .chatbot-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Chatbot Body */
+        .chatbot-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .chatbot-body::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chatbot-body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .chatbot-body::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        .chatbot-body::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Chatbot Messages */
+        .chatbot-message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            word-wrap: break-word;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bot-message {
+            background: #fff;
+            align-self: flex-start;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            align-self: flex-end;
+        }
+
+        .chatbot-message p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Chatbot Input */
+        .chatbot-input {
+            padding: 15px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .chatbot-input input:focus {
+            border-color: #667eea;
+        }
+
+        .chatbot-input button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
+        }
+
+        .chatbot-input button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .quick-action-btn {
+            padding: 8px 15px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-action-btn:hover {
+            background: #667eea;
+            color: #fff;
+            border-color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+                gap: 12px;
+            }
+
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 20px;
+            }
+
+            .chatbot-widget {
+                bottom: 90px;
+                right: 20px;
+                width: calc(100vw - 40px);
+                height: calc(100vh - 120px);
+            }
+
+            /* Adjust translateY for mobile when chatbot is active */
+            .floating-buttons.chatbot-active .instagram-btn,
+            .floating-buttons.chatbot-active .facebook-btn {
+                transform: translateY(calc(100vh - 150px));
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/preloader.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Logo" style="max-height: 60px; width: auto; height: auto;">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+
+                                </li>
+                                <li class="nav-item submenu"><a class="nav-link" href="about.html">About Us</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About Clinic</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="doctor-single.html">Dr. Nitin
+                                                Sapat</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="testimonials.html">Testimonials</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="contact.html">Book
+                                                Appointment</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+
+
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="contact.html">Book
+                                        Appointment</a></li>
+                            </ul>
+                        </div>
+                        <!-- Let’s Start Button Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="contact.html" class="btn-default btn-highlighted">book appointment</a>
+                        </div>
+                        <!-- Let’s Start Button End -->
+                    </div>
+                    <!-- Main Menu End -->
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero bg-image hero-video">
+        <!-- Video Start -->
+        <div class="hero-bg-video">
+            <!-- Selfhosted Video Start -->
+            <!-- <video autoplay muted loop id="myVideo"><source src="images/hero-bg-video.mp4" type="video/mp4"></video> -->
+            <video autoplay muted loop id="myVideo">
+                <source src="images/b1920531-e692-484c-b1e4-d2029d29f74a.mp4" type="video/mp4">
+            </video>
+
+            <!-- Selfhosted Video End -->
+
+            <!-- Youtube Video Start -->
+            <!-- <div id="herovideo" class="player" data-property="{videoURL:'74DWwSxsVSs',containment:'.hero-video', showControls:false, autoPlay:true, loop:true, vol:0, mute:false, startAt:0,  stopAt:296, opacity:1, addRaster:true, quality:'large', optimizeDisplay:true}"></div> -->
+            <!-- Youtube Video End -->
+        </div>
+        <!-- Video End -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h1 class="text-anime-style-3" data-cursor="-opaque">Expert Dental Care for Implants, Braces
+                                &amp; Aligners</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.35s">Led by Dr. Nitin Sapat, we combine expertise,
+                                compassion, and advanced technology to deliver painless, personalized dental treatments.
+                            </p>
+
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="contact.html" class="btn-default btn-highlighted">Book Appointment</a>
+                            <a href="tel:+91- 9226807779" class="btn-default">Ask a Question</a>
+                        </div>
+                        <div class="hero-contact-info wow fadeInUp" data-wow-delay="0.75s">
+                            <p style="color: #fff;"><strong>Call Now:</strong> +91- 9226807779 </p>
+                        </div>
+                        <!-- Hero Content Body End -->
+
+                        <!-- Hero Content Footer Start -->
+                        <div class="hero-content-footer">
+                            <!-- Hero Footer Box Start -->
+                            <div class="hero-footer-box wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-hero-footer-1.svg"
+                                        alt="">
+                                </div>
+                                <div class="hero-footer-box-content">
+                                    <p>Trusted for 17+ Years</p>
+                                </div>
+                            </div>
+                            <!-- Hero Footer Box End -->
+
+                            <!-- Hero Footer Box Start -->
+                            <div class="hero-footer-box wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-hero-footer-2.svg"
+                                        alt="">
+                                </div>
+                                <div class="hero-footer-box-content">
+                                    <p>Rated 5/5 by 2k+ Patients</p>
+                                </div>
+                            </div>
+                            <!-- Hero Footer Box End -->
+
+                            <!-- Hero Footer Box Start -->
+                            <div class="hero-footer-box wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-hero-footer-3.svg"
+                                        alt="">
+                                </div>
+                                <div class="hero-footer-box-content">
+                                    <p>Painless Treatment &amp; Transparent Care</p>
+                                </div>
+                            </div>
+                            <!-- Hero Footer Box End -->
+                        </div>
+                        <!-- Hero Content Footer End -->
+                    </div>
+                    <!-- Hero Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- CTA Contact Section Start -->
+    <div class="cta-contact-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Cta Item Start -->
+                    <div class="cta-contact-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-phone.svg" alt="">
+                        </div>
+                        <div class="cta-contact-content">
+                            <h3>Call Shri Sai Dental Clinic</h3>
+                            <p>+91- 9226807779 </p>
+                        </div>
+                    </div>
+                    <!-- Cta Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Cta Item Start -->
+                    <div class="cta-contact-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-clock.svg" alt="">
+                        </div>
+                        <div class="cta-contact-content">
+                            <h3>Clinic Timings</h3>
+                            <p>Mon &#8211; Sat: 10:00 AM &#8211; 2:00 PM | 5:00 PM &#8211; 9:00 PM<br>Sun: 10:00 AM
+                                &#8211; 2:00 PM</p>
+                        </div>
+                    </div>
+                    <!-- Cta Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Cta Item Start -->
+                    <div class="cta-contact-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-mail.svg" alt="">
+                        </div>
+                        <div class="cta-contact-content">
+                            <h3>Have a Question?</h3>
+                            <p>info@drnitinsapat.in</p>
+                        </div>
+                    </div>
+                    <!-- Cta Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Contact Section End -->
+
+    <!-- Our Service Section Start -->
+    <div class="our-service">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our services</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Our Main Specialties</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Discover personalized, painless treatments
+                            designed by Dr. Nitin Sapat and team. From smile corrections to full-mouth rehabilitation,
+                            we plan every step around your comfort.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Services Item Start -->
+                    <div class="service-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-service-1.svg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3>Braces &amp; Clear Aligners</h3>
+                            <p>Choose from metal, ceramic, or invisible aligners to achieve a confident, perfectly
+                                aligned smile.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="#contact" class="redmore-btn">book now</a>
+                        </div>
+                    </div>
+                    <!-- Services Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Services Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-service-2.svg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3>Root Canal Treatment (RCT)</h3>
+                            <p>Painless, single-sitting root canals using modern rotary endodontic systems that preserve
+                                your natural teeth.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="#contact" class="redmore-btn">book now</a>
+                        </div>
+                    </div>
+                    <!-- Services Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Services Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-service-3.svg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3>Dental Implants Center</h3>
+                            <p>Premium-quality implants placed with guided precision to restore full chewing function
+                                and lasting aesthetics.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="#contact" class="redmore-btn">book now</a>
+                        </div>
+                    </div>
+                    <!-- Services Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Services Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="icon-box">
+                            <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-service-4.svg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3>Cosmetic Dentistry</h3>
+                            <p>Smile designing, veneers, and whitening treatments tailored to enhance your natural
+                                features with confidence.</p>
+                        </div>
+                        <div class="service-btn">
+                            <a href="#contact" class="redmore-btn">book now</a>
+                        </div>
+                    </div>
+                    <!-- Services Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Service Section End -->
+
+    <!-- About Us Section Start -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Image Start -->
+                    <div class="about-image">
+                        <div class="about-img">
+                            <figure class="image-anime reveal">
+                                <img src="images/20.jpeg"
+                                    alt="Dr. Nitin Sapat with a smiling patient at Shri Sai Dental Clinic">
+                            </figure>
+                        </div>
+
+                        <!-- Happy Patients Counter Start -->
+                        <div class="happy-patients-counter">
+                            <div class="happy-patients-counter-box">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-happy-patients.svg"
+                                        alt="">
+                                </div>
+
+                                <div class="happy-patients-counter-content">
+                                    <h3>10k+</h3>
+                                    <p>happy patients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Happy Patients Counter End -->
+                    </div>
+                    <!-- About Image End -->
+                </div>
+                <div class="col-lg-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-us-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">about us</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Shri Sai Dental Clinic, Hadapsar
+                                &#8211; Gentle Dentistry Since 2008</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">For 17+ years, Shri Sai Dental Clinic has
+                                been the trusted family dental care partner in Hadapsar, Pune. We offer painless
+                                treatments in a calm, friendly setting, blending advanced technology with personalised
+                                attention for every smile.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- About Content Body Start -->
+                        <div class="about-content-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <!-- About Content List Start -->
+                                    <div class="about-content-list wow fadeInUp" data-wow-delay="0.5s">
+                                        <ul>
+                                            <li>Painless dental treatments for all ages</li>
+                                            <li>Zero waiting time with scheduled appointments</li>
+                                            <li>Advanced sterilisation &amp; safety protocols</li>
+                                            <li>Transparent treatment plans and pricing</li>
+                                        </ul>
+                                    </div>
+                                    <!-- About Content List End -->
+                                </div>
+
+                                <div class="col-md-5">
+                                    <!-- About Content Box Start -->
+                                    <div class="experience-counter wow fadeInUp" data-wow-delay="0.5s">
+                                        <div class="icon-box">
+                                            <img src="images/google-Photoroom.png" alt="">
+                                        </div>
+                                        <div class="experience-counter-content">
+                                            <h3>5</span>/5</h3>
+                                            <p>Ratings from 2k+ patients</p>
+                                        </div>
+                                    </div>
+                                    <!-- About Content Box End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- About Content Body End -->
+
+                        <!-- About Content Btn Start -->
+                        <div class="about-content-btn wow fadeInUp" data-wow-delay="0.75s">
+                            <a href="doctor-single.html" class="btn-default">Meet Dr. Nitin Sapat</a>
+                        </div>
+                        <!-- About Content Btn End -->
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+
+    <style>
+        /* ---------- Premium Process Section ---------- */
+        .premium-process {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        /* Left content */
+        .premium-process .section-title h2 {
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .premium-process p {
+            color: #4b5d6b;
+            line-height: 1.7;
+        }
+
+        /* Timeline steps */
+        .process-timeline {
+            margin-top: 35px;
+            border-left: 3px solid #4abae7;
+            padding-left: 25px;
+        }
+
+        .process-step {
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .process-step::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: #4abae7;
+            border-radius: 50%;
+            position: absolute;
+            left: -33px;
+            top: 4px;
+            box-shadow: 0 0 10px rgba(74, 186, 231, 0.6);
+        }
+
+        .process-step h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        /* Doctor Image Premium Effect */
+        .doctor-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 480px;
+            margin-left: auto;
+        }
+
+        .doctor-img {
+            width: 100%;
+            border-radius: 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Gradient Frame */
+        .doctor-frame {
+            position: absolute;
+            top: -18px;
+            right: -18px;
+            width: 100%;
+            height: 100%;
+            border-radius: 32px;
+            background: linear-gradient(135deg, #4abae7, #1876a5);
+            filter: blur(18px);
+            opacity: 0.55;
+            z-index: 1;
+        }
+
+        /* Slight zoom animation */
+        @keyframes zoomFade {
+            from {
+                opacity: 0;
+                transform: scale(0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .doctor-wrapper {
+            animation: zoomFade 0.7s ease-out;
+        }
+    </style>
+
+    <!-- -------- Premium Process Section Start -------- -->
+    <div class="premium-process">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h3>Our Process</h3>
+                        <h2>How We Deliver Gentle, Painless Dentistry</h2>
+                        <p>Experience stress-free consultations, pain-free procedures, and continuous support — all
+                            backed by advanced technology and expert care.</p>
+                    </div>
+
+                    <div class="process-timeline">
+
+                        <div class="process-step">
+                            <h4>01 · Personalised Consultation</h4>
+                            <p>We understand your needs and explain every treatment clearly.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <h4>02 · Gentle, Painless Treatment</h4>
+                            <p>Advanced tools and techniques ensure minimal discomfort.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <h4>03 · Follow-Up & Preventive Care</h4>
+                            <p>We guide you with reminders, reviews, and long-term oral care advice.</p>
+                        </div>
+
+                    </div>
+
+                    <a href="contact.html" class="btn-default mt-4">Schedule A Visit →</a>
+                </div>
+
+                <!-- Doctor Image -->
+                <div class="col-lg-6">
+                    <div class="doctor-wrapper">
+                        <img src="images/g8.png" alt="Doctor" class="doctor-img">
+                        <div class="doctor-frame"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------- Premium Process Section End -------- -->
+
+    <!-- Our Process Section End -->
+
+    <!-- Our Process Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us">
+        <div class="container-fluid">
+            <div class="row no-gutters align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <!-- Why Choose Image Start -->
+                    <div class="why-choose-image">
+                        <!-- Why Choose Box Start -->
+                        <div class="why-choose-box">
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-why-choose-1.svg"
+                                        alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Painless Dental Treatments</h3>
+                                    <p>Gentle techniques and modern anesthesia deliver comfortable care every visit.</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-why-choose-2.svg"
+                                        alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Experienced &amp; Caring Doctor</h3>
+                                    <p>Dr. Nitin Sapat is known for patient, polite, and detailed consultations.</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-why-choose-3.svg"
+                                        alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Zero Waiting Time</h3>
+                                    <p>Appointments are managed precisely so your treatment starts right on time.</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+                        </div>
+                        <!-- Why Choose Box End -->
+                    </div>
+                    <!-- Why Choose Image End -->
+                </div>
+
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <!-- Why Choose Content Start -->
+                    <div class="why-choose-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">why choose us</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Why Hadapsar Families Trust Shri Sai
+                                Dental Clinic</h2>
+                            <p class="highlighted-text wow fadeInUp" data-wow-delay="0.25s">Painless dentistry,
+                                transparent treatments, and compassionate guidance keep our patients smiling for life.
+                            </p>
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">From zero waiting time to advanced hygiene
+                                protocols, every detail is designed around your comfort. We explain each procedure
+                                upfront so you can make confident, informed decisions.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Why Choose Body Start -->
+                        <div class="why-choose-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- Why Choose Counter Box Start -->
+                                    <div class="why-choose-counter-box">
+                                        <!-- Why Choose Counter No Start -->
+                                        <div class="why-choose-counter-no">
+                                            <p>01</p>
+                                        </div>
+                                        <!-- Why Choose Counter No End -->
+
+                                        <!-- Why Choose Counter Content Start -->
+                                        <div class="why-choose-counter-content">
+                                            <h2><span class="counter">17</span>+</h2>
+                                            <h3>years of experience</h3>
+                                        </div>
+                                        <!-- Why Choose Counter Content End -->
+                                    </div>
+                                    <!-- Why Choose Counter Box End -->
+                                </div>
+
+                                <div class="col-md-4">
+                                    <!-- Why Choose Counter Box Start -->
+                                    <div class="why-choose-counter-box">
+                                        <!-- Why Choose Counter No Start -->
+                                        <div class="why-choose-counter-no">
+                                            <p>02</p>
+                                        </div>
+                                        <!-- Why Choose Counter No End -->
+
+                                        <!-- Why Choose Counter Content Start -->
+                                        <div class="why-choose-counter-content">
+                                            <h2>10k</span>+</h2>
+                                            <h3>happy smiles</h3>
+                                        </div>
+                                        <!-- Why Choose Counter Content End -->
+                                    </div>
+                                    <!-- Why Choose Counter Box End -->
+                                </div>
+
+                                <div class="col-md-4">
+                                    <!-- Why Choose Counter Box Start -->
+                                    <div class="why-choose-counter-box">
+                                        <!-- Why Choose Counter No Start -->
+                                        <div class="why-choose-counter-no">
+                                            <p>03</p>
+                                        </div>
+                                        <!-- Why Choose Counter No End -->
+
+                                        <!-- Why Choose Counter Content Start -->
+                                        <div class="why-choose-counter-content">
+                                            <h2><span class="counter">5</span>/5</h2>
+                                            <h3>average patient rating</h3>
+                                        </div>
+                                        <!-- Why Choose Counter Content End -->
+                                    </div>
+                                    <!-- Why Choose Counter Box End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Why Choose Body End -->
+                    </div>
+                    <!-- Why Choose Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Our Testimonial Section Start -->
+    <div class="our-testimonials">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">testimonials</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">5/5 Rating | 10k+ Happy Smiles</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Real stories from patients who experienced
+                            painless dentistry, transparent care, and smile transformations at Shri Sai Dental Clinic.
+                        </p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Testimonial Slider Start -->
+                    <div class="testimonial-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote">
+                                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-quote.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>“Dr.Nitin Sapat is very gentle and professional. The treatment was
+                                                    smooth and pain-free.”</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/google.png"
+                                                        alt="Riya M. sharing her painless dental experience">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>Reshma Shinde</h3>
+                                                <p>Hadapsar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote">
+                                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-quote.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>“The root canal treatment was done smoothly and didn’t take much
+                                                    time.”</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/google.png"
+                                                        alt="Sandeep K. reviewing Shri Sai Dental Clinic">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>Akshada Kahate</h3>
+                                                <p>Fursungi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote">
+                                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-quote.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>“I have undergone aligner treatment for maligned teeth. Very good
+                                                    results”</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/google.png"
+                                                        alt="Sneha P. smiling after dental treatment">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>Aafreen Patavekari</h3>
+                                                <p>Magarpatta</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+
+                                <!-- Testimonial Slide Start -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote">
+                                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-quote.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>“recently had to extract my wisdom teeth, doctor was highly
+                                                    professional and nicely done the extraction.”</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/google.png" alt="Shri Sai Dental Clinic promise">
+                                                </figure>
+                                            </div>
+                                            <div class="author-content">
+                                                <h3>Sandeep Sontakke</h3>
+                                                <p>Hadapsar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Slide End -->
+                            </div>
+                            <!-- Testimonial Btn Start -->
+                            <div class="testimonial-btn">
+                                <div class="testimonial-button-prev"></div>
+                                <div class="testimonial-button-next"></div>
+                            </div>
+                            <!-- Testimonial Btn End -->
+                        </div>
+                    </div>
+                    <!-- Testimonial Slider End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Testimonial Section End -->
+
+    <!-- We Provide Section Start -->
+    <div class="we-provide">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- We Provide Content Start -->
+                    <div class="we-provide-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">quick facts</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Shri Sai Dental Clinic at a Glance</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Experience compassionate dentistry tailored
+                                to every age and smile, right here in Satavwadi, Hadapsar.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.35s">From preventive check-ups to smile makeovers,
+                                Dr. Nitin Sapat blends advanced technology with a gentle touch.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.45s">Step in with questions, leave with clarity,
+                                confidence, and a care plan that feels made just for you.</p>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                    <!-- We Provide Content End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- We Provide Image Video Start -->
+                    <div class="we-provide-image-video">
+                        <!-- We Provide Image Start -->
+                        <div class="we-provide-image">
+                            <a href="images/WhatsApp Video 2025-11-14 at 2.44.20 PM.mp4" class="popup-video"
+                                data-cursor-text="Play">
+                                <figure class="reveal">
+                                    <img src="images/chair.jpeg"
+                                        alt="Quick facts about Shri Sai Dental Clinic in Hadapsar">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- We Provide Image End -->
+
+                        <!-- Video Play Button Start -->
+                        <div class="video-play-button">
+                            <a href="images/WhatsApp Video 2025-11-14 at 2.44.20 PM.mp4" class="popup-video"
+                                data-cursor-text="Play">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                        <!-- Video Play Button End -->
+                    </div>
+                    <!-- We Provide Image Video End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- We Provide Box Start -->
+                    <div class="we-provide-box">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <!-- We Provide Item Start -->
+                                <div class="we-provide-item wow fadeInUp">
+                                    <div class="provide-item-no">
+                                        <h3>1</h3>
+                                    </div>
+                                    <div class="provide-item-content">
+                                        <h3>17+ Years of Service</h3>
+                                        <p>Trusted dental care in Satavwadi, Hadapsar since 2008 for families across
+                                            Pune.</p>
+                                    </div>
+                                </div>
+                                <!-- We Provide Item End -->
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <!-- We Provide Item Start -->
+                                <div class="we-provide-item wow fadeInUp" data-wow-delay="0.25s">
+                                    <div class="provide-item-no">
+                                        <h3>2</h3>
+                                    </div>
+                                    <div class="provide-item-content">
+                                        <h3>10k+ Happy Smiles</h3>
+                                        <p>Highly rated for our painless treatments, transparent guidance, and
+                                            word-of-mouth referrals.</p>
+                                    </div>
+                                </div>
+                                <!-- We Provide Item End -->
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <!-- We Provide Item Start -->
+                                <div class="we-provide-item wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="provide-item-no">
+                                        <h3>3</h3>
+                                    </div>
+                                    <div class="provide-item-content">
+                                        <h3>5 / 5 Rating</h3>
+                                        <p>Consistently recommended for compassionate care, detailed explanations, and
+                                            lasting results.</p>
+                                    </div>
+                                </div>
+                                <!-- We Provide Item End -->
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <!-- We Provide Item Start -->
+                                <div class="we-provide-item wow fadeInUp" data-wow-delay="0.75s">
+                                    <div class="provide-item-no">
+                                        <h3>4</h3>
+                                    </div>
+                                    <div class="provide-item-content">
+                                        <h3>Top Specialties</h3>
+                                        <p>Braces, clear aligners, dental implants, and painless root canal treatments
+                                            under one roof.</p>
+                                    </div>
+                                </div>
+                                <!-- We Provide Item End -->
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <!-- We Provide Item Start -->
+                                <div class="we-provide-item wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="provide-item-no">
+                                        <h3>5</h3>
+                                    </div>
+                                    <div class="provide-item-content">
+                                        <h3>Motto</h3>
+                                        <p>“Painless. Personalized. Professional.” — our promise for every visit, every
+                                            smile.</p>
+                                    </div>
+                                </div>
+                                <!-- We Provide Item End -->
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <!-- We Provide Item Start -->
+                                <div class="we-provide-item wow fadeInUp" data-wow-delay="1.05s">
+                                    <div class="provide-item-no">
+                                        <h3>6</h3>
+                                    </div>
+                                    <div class="provide-item-content">
+                                        <h3>Comfort-First Experience</h3>
+                                        <p>Relaxing ambience, flexible appointments, and empathetic support that ease
+                                            every visit.</p>
+                                    </div>
+                                </div>
+                                <!-- We Provide Item End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- We Provide Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- We Provide Section End -->
+
+
+
+    <div class="our-blog">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">other services</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">All Dental Solutions Under One Roof</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Beyond our core specialties, we offer
+                            comprehensive preventive, restorative, cosmetic, and surgical dentistry to care for every
+                            smile.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="contact.html" class="image-anime">
+                                    <img src="images/index-service1.webp"
+                                        alt="Preventive dental care at Shri Sai Dental Clinic">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h3><a href="contact.html">Primary Dentistry</a></h3>
+                                <ul>
+                                    <li>Preventive dental care</li>
+                                    <li>Root canal treatment</li>
+                                    <li>Dental fillings</li>
+                                    <li>Oral examinations &amp; digital X-rays</li>
+                                    <li>Scaling &amp; polishing</li>
+                                    <li>Gum disease treatment</li>
+                                </ul>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="tel:+91- 9226807779" class="redmore-btn">book appointment</a>
+                            </div>
+                            <!-- Post Readmore Button End-->
+                        </div>
+                        <!-- post Item Body End -->
+                    </div>
+                    <!-- Blog Item End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="contact.html" class="image-anime">
+                                    <img src="images/index-service2.png"
+                                        alt="Child and family dental care services in Hadapsar">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h3><a href="contact.html">Specialised Care</a></h3>
+                                <ul>
+                                    <li>Pediatric dentistry for gentle child care</li>
+                                    <li>Sedation dentistry for anxious patients</li>
+                                    <li>Special health care needs support</li>
+                                    <li>Comprehensive orthodontics</li>
+                                </ul>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="tel:+91- 9226807779" class="redmore-btn">talk to us</a>
+                            </div>
+                            <!-- Post Readmore Button End-->
+                        </div>
+                        <!-- post Item Body End -->
+                    </div>
+                    <!-- Blog Item End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="contact.html" class="image-anime">
+                                    <img src="images/index-service3.png"
+                                        alt="Dental implant surgery at Shri Sai Dental Clinic">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h3><a href="contact.html">Surgical Procedures</a></h3>
+                                <ul>
+                                    <li>Oral &amp; maxillofacial surgery</li>
+                                    <li>Dental implants</li>
+                                    <li>Emergency dental care</li>
+                                    <li>Wisdom tooth extractions</li>
+                                    <li>Bone grafting</li>
+                                </ul>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="tel:+91- 9226807779" class="redmore-btn">plan your visit</a>
+                            </div>
+                            <!-- Post Readmore Button End-->
+                        </div>
+                        <!-- post Item Body End -->
+                    </div>
+                    <!-- Blog Item End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Blog Item Start -->
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.75s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="contact.html" class="image-anime">
+                                    <img src="images/index-service4.png" alt="Cosmetic smile makeover in Pune">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h3><a href="contact.html">Cosmetic Dentistry</a></h3>
+                                <ul>
+                                    <li>Smile designing</li>
+                                    <li>Teeth whitening &amp; veneers</li>
+                                    <li>Braces &amp; clear aligners</li>
+                                    <li>Complete &amp; partial dentures</li>
+                                    <li>Dental bonding</li>
+                                    <li>Inlays &amp; onlays</li>
+                                </ul>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="tel:+91- 9226807779" class="redmore-btn">design your smile</a>
+                            </div>
+                            <!-- Post Readmore Button End-->
+                        </div>
+                        <!-- post Item Body End -->
+                    </div>
+                    <!-- Blog Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section Start -->
+    <div class="contact-us" id="contact">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">contact us</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Book Your Visit to Shri Sai Dental Clinic
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Reach out to schedule an appointment, ask a
+                            question, or locate our clinic in Satavwadi, Hadapsar. We&#8217;re here to help every step
+                            of the way.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Contact Info Box Start -->
+                    <div class="contact-info-box">
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-phone.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Contact Info Content Start -->
+                            <div class="contact-info-content">
+                                <h3>Call Us</h3>
+                                <p>+91- 9226807779 </p>
+                            </div>
+                            <!-- Contact Info Content End -->
+                        </div>
+                        <!-- Contact Info Item End -->
+
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.25s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-location.svg"
+                                    alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Contact Info Content Start -->
+                            <div class="contact-info-content">
+                                <h3>Visit Us</h3>
+                                <p>Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune &#8211; 411028</p>
+                            </div>
+                            <!-- Contact Info Content End -->
+                        </div>
+                        <!-- Contact Info Item End -->
+
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.5s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-mail.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Contact Info Content Start -->
+                            <div class="contact-info-content">
+                                <h3>Email Us</h3>
+                                <p>info@drnitinsapat.in</p>
+                            </div>
+                            <!-- Contact Info Content End -->
+                        </div>
+                        <!-- Contact Info Item End -->
+                    </div>
+                    <!-- Contact Info Box End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Google Map Iframe Start -->
+                    <div class="google-map-iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.741413079138!2d73.94287017465159!3d18.495368669944657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c20644a9d87d%3A0xd13ecdb52f16701!2sDr%20Nitin%20Sapat%20&#39;s%20Shri%20Sai%20Dental%20Clinic%2C%20Braces%20Aligner%20and%20Implant%20center!5e0!3m2!1sen!2sin!4v1762506285244!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Shri Sai Dental Clinic location on Google Maps"></iframe>
+                    </div>
+                    <!-- Google Map Iframe End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us Section End -->
+
+    <!-- Floating Social & Chat Buttons Start -->
+    <div class="floating-buttons">
+        <!-- Chatbot Button -->
+        <button class="floating-btn chatbot-btn" id="chatbotBtn" title="Chat with us">
+            <i class="fa-solid fa-comments"></i>
+            <span class="chatbot-badge">1</span>
+        </button>
+
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/dr_nitin_sapat/" target="_blank" class="floating-btn instagram-btn"
+            title="Follow us on Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/shrisaimultispecialitydental/" target="_blank"
+            class="floating-btn facebook-btn" title="Like us on Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+
+    <!-- Chatbot Widget Start -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-header">
+            <div class="chatbot-header-content">
+                <h4>Shri Sai Dental Clinic</h4>
+                <p>We're here to help!</p>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chatbot-message bot-message">
+                <p>Hello! 👋 Welcome to Shri Sai Dental Clinic. How can we help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type your message...">
+            <button id="chatbotSend">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Chatbot Widget End -->
+    <!-- Floating Social & Chat Buttons End -->
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Footer Booking Box Start -->
+            <div class="footer-booking-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <!-- Footer Booking Title Start -->
+                        <div class="footer-booking-title">
+                            <h2>Shri Sai Dental Clinic – Because Every Smile Deserves Gentle Care.</h2>
+                        </div>
+                        <!-- Footer Booking Title End -->
+                    </div>
+
+                    <div class="col-lg-4">
+                        <!-- Footer Booking Btn Start -->
+                        <div class="footer-booking-btn">
+                            <a href="tel:+91- 9226807779" class="btn-default btn-highlighted">Call +91- 9226807779</a>
+                        </div>
+                        <!-- Footer Booking Btn End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Booking Box End -->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <!-- About Footer Start -->
+                    <div class="about-footer">
+                        <!-- Footer Logo Start -->
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <!-- Footer Logo End -->
+
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content">
+                            <p>Painless, personalised dentistry in Hadapsar since 2008. Trusted for braces, aligners,
+                                implants, and gentle root canal care.</p>
+                        </div>
+                        <!-- Footer Social Links Start -->
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/shrisaimultispecialitydental/"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+
+                                <li><a href="https://www.instagram.com/dr_nitin_sapat/"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Social Links End -->
+
+                    </div>
+                    <!-- About Footer End -->
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <!-- About Links Start -->
+                    <div class="footer-links">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="service.html">our services</a></li>
+                            <li><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </div>
+                    <!-- About Links End -->
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <!-- About Links Start -->
+                    <div class="footer-links">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="braces-aligners.html">Braces &amp; Aligners</a></li>
+                            <li><a href="root-canal-treatment.html">Root Canal Treatment</a></li>
+                            <li><a href="dental-implants.html">Dental Implants</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- About Links End -->
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <!-- Footer Contact Info Box Start -->
+                    <div class="footer-links footer-contact-box">
+                        <h3>contact info</h3>
+                        <!-- Info Box Start -->
+                        <div class="footer-info-box">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <!-- Icon Box End -->
+                            <p>+91- 9226807779 </p>
+                        </div>
+                        <!-- Info Box End -->
+
+                        <!-- Info Box Start -->
+                        <div class="footer-info-box">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <!-- Icon Box End -->
+                            <p>info@drnitinsapat.in</p>
+                        </div>
+                        <!-- Info Box End -->
+
+                        <!-- Info Box Start -->
+                        <div class="footer-info-box">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <!-- Icon Box End -->
+                            <p>Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune &#8211; 411028</p>
+                        </div>
+                        <!-- Info Box End -->
+                    </div>
+                    <!-- Footer Contact Info Box End -->
+                </div>
+            </div>
+
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Footer Copyright Start -->
+                        <div class="footer-copyright-text">
+                            <p>© Shri Sai Dental Clinic 2025. All rights reserved.</p>
+                        </div>
+                        <!-- Footer Copyright End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.waypoints.min.js"></script>
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/gsap.min.js"></script>
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/SplitText.js"></script>
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/function.js"></script>
+
+    <!-- Floating Buttons & Chatbot JavaScript -->
+    <script>
+        // Chatbot functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const chatbotBtn = document.getElementById('chatbotBtn');
+            const chatbotWidget = document.getElementById('chatbotWidget');
+            const chatbotClose = document.getElementById('chatbotClose');
+            const chatbotBody = document.getElementById('chatbotBody');
+            const chatbotInput = document.getElementById('chatbotInput');
+            const chatbotSend = document.getElementById('chatbotSend');
+            const chatbotBadge = document.querySelector('.chatbot-badge');
+            const floatingButtons = document.querySelector('.floating-buttons');
+
+            // Toggle chatbot widget
+            chatbotBtn.addEventListener('click', function () {
+                chatbotWidget.classList.toggle('active');
+                if (chatbotWidget.classList.contains('active')) {
+                    chatbotBadge.style.display = 'none';
+                    chatbotInput.focus();
+                    // Add class to move social buttons back
+                    floatingButtons.classList.add('chatbot-active');
+                } else {
+                    // Remove class to restore social buttons position
+                    floatingButtons.classList.remove('chatbot-active');
+                }
+            });
+
+            // Close chatbot widget
+            chatbotClose.addEventListener('click', function () {
+                chatbotWidget.classList.remove('active');
+                // Remove class to restore social buttons position
+                floatingButtons.classList.remove('chatbot-active');
+            });
+
+            // Send message function
+            function sendMessage() {
+                const message = chatbotInput.value.trim();
+                if (message === '') return;
+
+                // Add user message
+                addMessage(message, 'user');
+                chatbotInput.value = '';
+
+                // Simulate bot response (you can replace this with actual API call)
+                setTimeout(() => {
+                    const botResponse = getBotResponse(message);
+                    addMessage(botResponse, 'bot');
+                }, 500);
+            }
+
+            // Send on button click
+            chatbotSend.addEventListener('click', sendMessage);
+
+            // Send on Enter key
+            chatbotInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            // Add message to chat
+            function addMessage(text, type) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chatbot-message ${type}-message`;
+                // Replace newlines with <br> tags for proper formatting
+                const formattedText = text.replace(/\n/g, '<br>');
+                messageDiv.innerHTML = `<p>${formattedText}</p>`;
+                chatbotBody.appendChild(messageDiv);
+                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }
+
+            // Bot response logic
+            function getBotResponse(userMessage) {
+                const message = userMessage.toLowerCase();
+
+                // Greeting responses
+                if (message.includes('hi') || message.includes('hello') || message.includes('hey')) {
+                    return 'Hello! 👋 Thank you for contacting Shri Sai Dental Clinic. How can I help you today?';
+                }
+
+                // Appointment related
+                if (message.includes('appointment') || message.includes('book') || message.includes('schedule')) {
+                    return 'To book an appointment, please call us at +91- 9226807779 or 9999999999. Our clinic timings are: Mon-Sat: 10 AM - 2 PM & 5 PM - 9 PM, Sun: 10 AM - 2 PM.';
+                }
+
+                // Services related
+                if (message.includes('service') || message.includes('treatment') || message.includes('what do you offer')) {
+                    return 'We offer a wide range of services including:\n• Braces & Clear Aligners\n• Root Canal Treatment\n• Dental Implants\n• Cosmetic Dentistry\n• Preventive Care\n• And much more!';
+                }
+
+                // Location related
+                if (message.includes('location') || message.includes('address') || message.includes('where')) {
+                    return 'We are located at: Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune - 411028. You can also check our location on Google Maps.';
+                }
+
+                // Timings related
+                if (message.includes('time') || message.includes('hours') || message.includes('open') || message.includes('closed')) {
+                    return 'Our clinic timings are:\nMonday to Saturday: 10:00 AM - 2:00 PM & 5:00 PM - 9:00 PM\nSunday: 10:00 AM - 2:00 PM';
+                }
+
+                // Price/Cost related
+                if (message.includes('price') || message.includes('cost') || message.includes('charge') || message.includes('fee')) {
+                    return 'Pricing varies based on the treatment. For accurate pricing information, please call us at +91- 9226807779 or visit our clinic for a consultation. We offer transparent pricing with no hidden charges.';
+                }
+
+                // Emergency related
+                if (message.includes('emergency') || message.includes('urgent') || message.includes('pain')) {
+                    return 'For dental emergencies, please call us immediately at +91- 9226807779. We prioritize emergency cases and will do our best to accommodate you.';
+                }
+
+                // Contact related
+                if (message.includes('contact') || message.includes('phone') || message.includes('number') || message.includes('call')) {
+                    return 'You can reach us at:\n📞 Phone: +91- 9226807779  \n📧 Email: info@drnitinsapat.in\n📍 Address: Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune - 411028';
+                }
+
+                // Default response
+                return 'Thank you for your message! For more specific information, please call us at +91- 9226807779 or visit our clinic. Our team is here to help with all your dental needs. 😊';
+            }
+
+            // Add quick action buttons after initial message
+            setTimeout(() => {
+                const quickActions = document.createElement('div');
+                quickActions.className = 'quick-actions';
+                quickActions.innerHTML = `
+                    <button class="quick-action-btn" onclick="quickAction('appointment')">Book Appointment</button>
+                    <button class="quick-action-btn" onclick="quickAction('services')">Our Services</button>
+                    <button class="quick-action-btn" onclick="quickAction('location')">Location</button>
+                    <button class="quick-action-btn" onclick="quickAction('contact')">Contact Info</button>
+                `;
+                chatbotBody.appendChild(quickActions);
+            }, 1000);
+
+            // Quick action function
+            window.quickAction = function (action) {
+                let message = '';
+                switch (action) {
+                    case 'appointment':
+                        message = 'I want to book an appointment';
+                        break;
+                    case 'services':
+                        message = 'What services do you offer?';
+                        break;
+                    case 'location':
+                        message = 'Where are you located?';
+                        break;
+                    case 'contact':
+                        message = 'What is your contact number?';
+                        break;
+                }
+                chatbotInput.value = message;
+                sendMessage();
+            };
+        });
+    </script>
+</body>
+
+</html>

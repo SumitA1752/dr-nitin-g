@@ -1,0 +1,1281 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FAQs – Shri Sai Dental Clinic, Hadapsar. Answers about painless root canals, braces & aligners, implants, appointments, and hygiene.">
+    <meta name="keywords" content="Dentist FAQs Hadapsar, Painless RCT FAQ, Aligners FAQ, Dental Implants FAQ Pune">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>FAQs | Shri Sai Dental Clinic – Hadapsar</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://html.awaikenthemes.com/primecare/demo-2/images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://html.awaikenthemes.com/primecare/demo-2/css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/all.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="https://html.awaikenthemes.com/primecare/demo-2/css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="https://html.awaikenthemes.com/primecare/demo-2/css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="https://html.awaikenthemes.com/primecare/demo-2/css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Floating Buttons & Chatbot Styles -->
+    <style>
+        /* Floating Buttons Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        /* Floating Button Base Styles */
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Chatbot Button */
+        .chatbot-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .chatbot-btn:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .chatbot-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff4444;
+            color: #fff;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            border: 2px solid #fff;
+        }
+
+        /* Instagram Button */
+        .instagram-btn {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .instagram-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Facebook Button */
+        .facebook-btn {
+            background: #1877f2;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .facebook-btn:hover {
+            background: #166fe5;
+        }
+
+        /* When chatbot is active, move social buttons back */
+        .floating-buttons.chatbot-active .instagram-btn,
+        .floating-buttons.chatbot-active .facebook-btn {
+            transform: translateY(540px) scale(0.8);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        /* Chatbot Widget */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 380px;
+            max-width: calc(100vw - 60px);
+            height: 500px;
+            max-height: calc(100vh - 140px);
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 9998;
+            overflow: hidden;
+        }
+
+        .chatbot-widget.active {
+            display: flex;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Chatbot Header */
+        .chatbot-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header-content h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .chatbot-header-content p {
+            margin: 5px 0 0 0;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .chatbot-close {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .chatbot-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Chatbot Body */
+        .chatbot-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .chatbot-body::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chatbot-body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .chatbot-body::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        .chatbot-body::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Chatbot Messages */
+        .chatbot-message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            word-wrap: break-word;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bot-message {
+            background: #fff;
+            align-self: flex-start;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            align-self: flex-end;
+        }
+
+        .chatbot-message p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Chatbot Input */
+        .chatbot-input {
+            padding: 15px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .chatbot-input input:focus {
+            border-color: #667eea;
+        }
+
+        .chatbot-input button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
+        }
+
+        .chatbot-input button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .quick-action-btn {
+            padding: 8px 15px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-action-btn:hover {
+            background: #667eea;
+            color: #fff;
+            border-color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+                gap: 12px;
+            }
+
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 20px;
+            }
+
+            .chatbot-widget {
+                bottom: 90px;
+                right: 20px;
+                width: calc(100vw - 40px);
+                height: calc(100vh - 120px);
+            }
+
+            /* Adjust translateY for mobile when chatbot is active */
+            .floating-buttons.chatbot-active .instagram-btn,
+            .floating-buttons.chatbot-active .facebook-btn {
+                transform: translateY(calc(100vh - 150px));
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="https://html.awaikenthemes.com/primecare/demo-2/images/loader.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Logo" style="max-height: 60px; width: auto; height: auto;">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+
+                                </li>
+                                <li class="nav-item submenu"><a class="nav-link" href="about.html">About Us</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About Clinic</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="doctor-single.html">Dr. Nitin
+                                                Sapat</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="testimonials.html">Testimonials</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="contact.html">Book
+                                                Appointment</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+
+
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="contact.html">Book
+                                        Appointment</a></li>
+                            </ul>
+                        </div>
+                        <!-- Let’s Start Button Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="contact.html" class="btn-default btn-highlighted">book appointment</a>
+                        </div>
+                        <!-- Let’s Start Button End -->
+                    </div>
+                    <!-- Main Menu End -->
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1 class="text-anime-style-3" data-cursor="-opaque">Frequently Asked Questions</h1>
+                        <nav class="wow fadeInUp">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a
+                                        href="https://html.awaikenthemes.com/primecare/demo-2/">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Page Faqs Start -->
+    <div class="page-faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-1 order-2">
+                    <div class="page-faqs-catagery">
+                        <!-- FAQs section start -->
+                        <div class="page-faq-accordion" id="general_information">
+                            <div class="faq-accordion-title">
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">General Information</h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="page-faq-accordion" id="accordion">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            What services do you offer?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading1" data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
+                                    <h2 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                                            aria-controls="collapse2">
+                                            How often should I visit the dentist?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Dental sealants are thin, protective coatings applied to the chewing
+                                                surfaces of molars to prevent cavities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                                    <h2 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                            aria-controls="collapse3">
+                                            Do you accept insurance?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Yes, teeth whitening treatments performed by a dentist or with
+                                                dentist-approved products are safe and effective.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.75s">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                            aria-controls="collapse4">
+                                            What can I expect during my first visit?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>Cosmetic dentistry focuses on improving the appearance of teeth, gums,
+                                                and smile through procedures like whitening, veneers, and bonding.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="1s">
+                                    <h2 class="accordion-header" id="heading5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                            aria-controls="collapse5">
+                                            Do you offer emergency dental care?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                        data-bs-parent="#accordion">
+                                        <div class="accordion-body">
+                                            <p>At-home whitening options include over-the-counter whitening strips,
+                                                gels, toothpaste, and custom trays provided by your dentist.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+
+                        <!-- FAQs section start -->
+                        <div class="page-faq-accordion" id="preventive_care">
+                            <div class="faq-accordion-title">
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">Preventive Care</h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion1">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp">
+                                    <h2 class="accordion-header" id="heading11">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse11" aria-expanded="true"
+                                            aria-controls="collapse11">
+                                            What is preventive dental care?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse11" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading11" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
+                                    <h2 class="accordion-header" id="heading12">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false"
+                                            aria-controls="collapse12">
+                                            How often should I visit the dentist for preventive care?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                                        data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                                    <h2 class="accordion-header" id="heading13">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false"
+                                            aria-controls="collapse13">
+                                            What are dental sealants and who should get them?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                                        data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.75s">
+                                    <h2 class="accordion-header" id="heading14">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false"
+                                            aria-controls="collapse14">
+                                            What are the signs of gum disease and how can it be prevented?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                                        data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="1s">
+                                    <h2 class="accordion-header" id="heading15">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false"
+                                            aria-controls="collapse15">
+                                            Can chronic therapy help with postural problems?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                                        data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+
+                        <!-- FAQs section start -->
+                        <div class="page-faq-accordion" id="cosmetic_dentistry">
+                            <div class="faq-accordion-title">
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">Cosmetic Dentistry</h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion2">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp">
+                                    <h2 class="accordion-header" id="heading21">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse21" aria-expanded="true"
+                                            aria-controls="collapse21">
+                                            What is cosmetic dentistry?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse21" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading21" data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
+                                    <h2 class="accordion-header" id="heading22">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false"
+                                            aria-controls="collapse22">
+                                            How long does teeth whitening last?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+                                        data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                                    <h2 class="accordion-header" id="heading23">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false"
+                                            aria-controls="collapse23">
+                                            How can cosmetic dentistry improve my smile?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23"
+                                        data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.75s">
+                                    <h2 class="accordion-header" id="heading24">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false"
+                                            aria-controls="collapse24">
+                                            What are dental fillings and when are they needed?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24"
+                                        data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="1s">
+                                    <h2 class="accordion-header" id="heading25">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="false"
+                                            aria-controls="collapse25">
+                                            What is a dental crown and why might I need one?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25"
+                                        data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+
+                        <!-- FAQs section start -->
+                        <div class="page-faq-accordion" id="restorative_dentistry">
+                            <div class="faq-accordion-title">
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">Restorative Dentistry</h2>
+                            </div>
+                            <!-- FAQ Accordion Start -->
+                            <div class="faq-accordion" id="accordion3">
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp">
+                                    <h2 class="accordion-header" id="heading31">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse31" aria-expanded="true"
+                                            aria-controls="collapse31">
+                                            What is restorative dentistry?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse31" class="accordion-collapse collapse show"
+                                        aria-labelledby="heading31" data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
+                                    <h2 class="accordion-header" id="heading32">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse32" aria-expanded="false"
+                                            aria-controls="collapse32">
+                                            What are dental fillings and when are they needed?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse32" class="accordion-collapse collapse" aria-labelledby="heading32"
+                                        data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                                    <h2 class="accordion-header" id="heading33">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse33" aria-expanded="false"
+                                            aria-controls="collapse33">
+                                            What is the difference between partial and full dentures?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33"
+                                        data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.75s">
+                                    <h2 class="accordion-header" id="heading34">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse34" aria-expanded="false"
+                                            aria-controls="collapse34">
+                                            Are restorative dental procedures painful?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse34" class="accordion-collapse collapse" aria-labelledby="heading34"
+                                        data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+
+                                <!-- FAQ Item Start -->
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="1s">
+                                    <h2 class="accordion-header" id="heading35">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse35" aria-expanded="false"
+                                            aria-controls="collapse35">
+                                            How can I care for my restorations to ensure they last?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse35" class="accordion-collapse collapse" aria-labelledby="heading35"
+                                        data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            <p>Yes, we accept a variety of insurance plans. Please contact our office to
+                                                verify if your specific insurance provider is accepted and to discuss
+                                                coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ Item End -->
+                            </div>
+                            <!-- FAQ Accordion End -->
+                        </div>
+                        <!-- FAQs section End -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 order-lg-2 order-1">
+                    <!-- Faqs Sidebar Start -->
+                    <div class="faq-sidebar">
+                        <!-- Faqs Catagery List Start -->
+                        <div class="faq-catagery-list wow fadeInUp">
+                            <ul>
+                                <li><a href="faqs.html#general_information">general information</a></li>
+                                <li><a href="faqs.html#preventive_care">preventive care</a></li>
+                                <li><a href="faqs.html#cosmetic_dentistry">cosmetic dentistry</a></li>
+                                <li><a href="faqs.html#restorative_dentistry">restorative dentistry</a></li>
+                            </ul>
+                        </div>
+                        <!-- Faqs Catagery List End -->
+
+                        <!-- Section CTA Box Start -->
+                        <div class="section-cta-box wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="icon-box">
+                                <img src="https://html.awaikenthemes.com/primecare/demo-2/images/icon-faqs-cta-box.svg"
+                                    alt="">
+                            </div>
+                            <div class="section-cta-content">
+                                <p>We always take care of your smile</p>
+                                <h3>Call Us</h3>
+                                <span>+91- 9226807779</span>
+                            </div>
+                        </div>
+                        <!-- Section CTA Box End -->
+                    </div>
+                    <!-- Faqs Sidebar End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Faq End -->
+
+    <!-- Floating Social & Chat Buttons Start -->
+    <div class="floating-buttons">
+        <!-- Chatbot Button -->
+        <button class="floating-btn chatbot-btn" id="chatbotBtn" title="Chat with us">
+            <i class="fa-solid fa-comments"></i>
+            <span class="chatbot-badge">1</span>
+        </button>
+
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/dr_nitin_sapat/" target="_blank" class="floating-btn instagram-btn"
+            title="Follow us on Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/shrisaimultispecialitydental/" target="_blank"
+            class="floating-btn facebook-btn" title="Like us on Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+
+    <!-- Chatbot Widget Start -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-header">
+            <div class="chatbot-header-content">
+                <h4>Shri Sai Dental Clinic</h4>
+                <p>We're here to help!</p>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chatbot-message bot-message">
+                <p>Hello! 👋 Welcome to Shri Sai Dental Clinic. How can we help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type your message...">
+            <button id="chatbotSend">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Chatbot Widget End -->
+    <!-- Floating Social & Chat Buttons End -->
+
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Footer Booking Box Start -->
+            <div class="footer-booking-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <!-- Footer Booking Title Start -->
+                        <div class="footer-booking-title">
+                            <h2>Shri Sai Dental Clinic – Because Every Smile Deserves Gentle Care.</h2>
+                        </div>
+                        <!-- Footer Booking Title End -->
+                    </div>
+
+                    <div class="col-lg-4">
+                        <!-- Footer Booking Btn Start -->
+                        <div class="footer-booking-btn">
+                            <a href="tel:+91- 9226807779" class="btn-default btn-highlighted">Call +91- 9226807779</a>
+                        </div>
+                        <!-- Footer Booking Btn End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Booking Box End -->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <!-- About Footer Start -->
+                    <div class="about-footer">
+                        <!-- Footer Logo Start -->
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <!-- Footer Logo End -->
+
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content">
+                            <p>Painless, personalised dentistry in Hadapsar since 2008. Trusted for braces, aligners,
+                                implants, and gentle root canal care.</p>
+                        </div>
+                        <!-- Footer Social Links Start -->
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/shrisaimultispecialitydental/"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+
+                                <li><a href="https://www.instagram.com/dr_nitin_sapat/"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Social Links End -->
+
+                    </div>
+                    <!-- About Footer End -->
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <!-- About Links Start -->
+                    <div class="footer-links">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="service.html">our services</a></li>
+                            <li><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </div>
+                    <!-- About Links End -->
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <!-- About Links Start -->
+                    <div class="footer-links">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="braces-aligners.html">Braces &amp; Aligners</a></li>
+                            <li><a href="root-canal-treatment.html">Root Canal Treatment</a></li>
+                            <li><a href="dental-implants.html">Dental Implants</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- About Links End -->
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <!-- Footer Contact Info Box Start -->
+                    <div class="footer-links footer-contact-box">
+                        <h3>contact info</h3>
+                        <!-- Info Box Start -->
+                        <div class="footer-info-box">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <!-- Icon Box End -->
+                            <p>+91- 9226807779 </p>
+                        </div>
+                        <!-- Info Box End -->
+
+                        <!-- Info Box Start -->
+                        <div class="footer-info-box">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <!-- Icon Box End -->
+                            <p>info@drnitinsapat.in</p>
+                        </div>
+                        <!-- Info Box End -->
+
+                        <!-- Info Box Start -->
+                        <div class="footer-info-box">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <!-- Icon Box End -->
+                            <p>Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune &#8211; 411028</p>
+                        </div>
+                        <!-- Info Box End -->
+                    </div>
+                    <!-- Footer Contact Info Box End -->
+                </div>
+            </div>
+
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Footer Copyright Start -->
+                        <div class="footer-copyright-text">
+                            <p>© Shri Sai Dental Clinic 2025. All rights reserved.</p>
+                        </div>
+                        <!-- Footer Copyright End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.waypoints.min.js"></script>
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/gsap.min.js"></script>
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/SplitText.js"></script>
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="https://html.awaikenthemes.com/primecare/demo-2/js/function.js"></script>
+
+    <!-- Floating Buttons & Chatbot JavaScript -->
+    <script>
+        // Chatbot functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const chatbotBtn = document.getElementById('chatbotBtn');
+            const chatbotWidget = document.getElementById('chatbotWidget');
+            const chatbotClose = document.getElementById('chatbotClose');
+            const chatbotBody = document.getElementById('chatbotBody');
+            const chatbotInput = document.getElementById('chatbotInput');
+            const chatbotSend = document.getElementById('chatbotSend');
+            const chatbotBadge = document.querySelector('.chatbot-badge');
+            const floatingButtons = document.querySelector('.floating-buttons');
+
+            // Toggle chatbot widget
+            chatbotBtn.addEventListener('click', function () {
+                chatbotWidget.classList.toggle('active');
+                if (chatbotWidget.classList.contains('active')) {
+                    chatbotBadge.style.display = 'none';
+                    chatbotInput.focus();
+                    floatingButtons.classList.add('chatbot-active');
+                } else {
+                    floatingButtons.classList.remove('chatbot-active');
+                }
+            });
+
+            // Close chatbot widget
+            chatbotClose.addEventListener('click', function () {
+                chatbotWidget.classList.remove('active');
+                floatingButtons.classList.remove('chatbot-active');
+            });
+
+            // Send message function
+            function sendMessage() {
+                const message = chatbotInput.value.trim();
+                if (message === '') return;
+                addMessage(message, 'user');
+                chatbotInput.value = '';
+                setTimeout(() => {
+                    const botResponse = getBotResponse(message);
+                    addMessage(botResponse, 'bot');
+                }, 500);
+            }
+
+            chatbotSend.addEventListener('click', sendMessage);
+            chatbotInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            function addMessage(text, type) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chatbot-message ${type}-message`;
+                const formattedText = text.replace(/\n/g, '<br>');
+                messageDiv.innerHTML = `<p>${formattedText}</p>`;
+                chatbotBody.appendChild(messageDiv);
+                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }
+
+            function getBotResponse(userMessage) {
+                const message = userMessage.toLowerCase();
+                if (message.includes('hi') || message.includes('hello') || message.includes('hey')) {
+                    return 'Hello! 👋 Thank you for contacting Shri Sai Dental Clinic. How can I help you today?';
+                }
+                if (message.includes('appointment') || message.includes('book') || message.includes('schedule')) {
+                    return 'To book an appointment, please call us at +91- 9226807779 or 9999999999. Our clinic timings are: Mon-Sat: 10 AM - 2 PM & 5 PM - 9 PM, Sun: 10 AM - 2 PM.';
+                }
+                if (message.includes('service') || message.includes('treatment') || message.includes('what do you offer')) {
+                    return 'We offer a wide range of services including:\n• Braces & Clear Aligners\n• Root Canal Treatment\n• Dental Implants\n• Cosmetic Dentistry\n• Preventive Care\n• And much more!';
+                }
+                if (message.includes('location') || message.includes('address') || message.includes('where')) {
+                    return 'We are located at: Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune - 411028. You can also check our location on Google Maps.';
+                }
+                if (message.includes('time') || message.includes('hours') || message.includes('open') || message.includes('closed')) {
+                    return 'Our clinic timings are:\nMonday to Saturday: 10:00 AM - 2:00 PM & 5:00 PM - 9:00 PM\nSunday: 10:00 AM - 2:00 PM';
+                }
+                if (message.includes('price') || message.includes('cost') || message.includes('charge') || message.includes('fee')) {
+                    return 'Pricing varies based on the treatment. For accurate pricing information, please call us at +91- 9226807779 or visit our clinic for a consultation. We offer transparent pricing with no hidden charges.';
+                }
+                if (message.includes('emergency') || message.includes('urgent') || message.includes('pain')) {
+                    return 'For dental emergencies, please call us immediately at +91- 9226807779. We prioritize emergency cases and will do our best to accommodate you.';
+                }
+                if (message.includes('contact') || message.includes('phone') || message.includes('number') || message.includes('call')) {
+                    return 'You can reach us at:\n📞 Phone: +91- 9226807779  \n📧 Email: info@drnitinsapat.in\n📍 Address: Shop No.10, Chowrang Residency, Satavwadi, Hadapsar, Pune - 411028';
+                }
+                return 'Thank you for your message! For more specific information, please call us at +91- 9226807779 or visit our clinic. Our team is here to help with all your dental needs. 😊';
+            }
+
+            setTimeout(() => {
+                const quickActions = document.createElement('div');
+                quickActions.className = 'quick-actions';
+                quickActions.innerHTML = `
+                    <button class="quick-action-btn" onclick="quickAction('appointment')">Book Appointment</button>
+                    <button class="quick-action-btn" onclick="quickAction('services')">Our Services</button>
+                    <button class="quick-action-btn" onclick="quickAction('location')">Location</button>
+                    <button class="quick-action-btn" onclick="quickAction('contact')">Contact Info</button>
+                `;
+                chatbotBody.appendChild(quickActions);
+            }, 1000);
+
+            window.quickAction = function (action) {
+                let message = '';
+                switch (action) {
+                    case 'appointment': message = 'I want to book an appointment'; break;
+                    case 'services': message = 'What services do you offer?'; break;
+                    case 'location': message = 'Where are you located?'; break;
+                    case 'contact': message = 'What is your contact number?'; break;
+                }
+                chatbotInput.value = message;
+                sendMessage();
+            };
+        });
+    </script>
+
+</body>
+
+</html>
